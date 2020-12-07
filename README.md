@@ -2,7 +2,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
   <script src="https://cdn.plyr.io/3.6.2/demo.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/demo.css" />
 
