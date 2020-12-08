@@ -1,34 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  <script src="https://cdn.plyr.io/3.6.2/demo.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/demo.css" />
+	
+	<head>
+    		<meta charset="utf-8" />
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   </head>
-   <body>
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
 
-     <video controls crossorigin playsinline
-     data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
+	</head>
+	
+<body>
 
-      <source
-        <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
-              type="video/mp4"
-              size="576"
-            />
-            <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
-              type="video/mp4"
-              size="720"
-            />
-            <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
-              type="video/mp4"
-              size="1080"
-            />
-       
-     </body>
-     </html>
+	<video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" class="js-player">
+
+    	<source
+    
+    		src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+   		type="video/mp4"
+    		size="1080"
+    
+    	/>
+    
+    	<source
+    
+    		src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+    		type="video/mp4"
+    		size="720"
+    
+    	/>
+    
+    	<source
+    
+    		src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+    		type="video/mp4"
+    		size="576"
+    
+    	/>
+    
+    
+	</video>
+
+
+	</script>
+
+		<script src="https://cdn.plyr.io/3.5.6/plyr.js" crossorigin="anonymous">
+
+	</script>
+
+	<script>
+
+    	document.addEventListener('DOMContentLoaded', () => {
+        
+        const controls = [
+            'play-large', 
+            'rewind', 
+            'play', 
+            'fast-forward',
+            'progress', 
+            'current-time', 
+            'duration', 
+            'mute', 
+            'volume', 
+            'captions', 
+            'settings', 
+            'pip', 
+            'fullscreen' 
+        ];
+
+        const player = Plyr.setup('.js-player', { controls });
+
+    });
+    
+	</script>
+    
+</body>
+</html>
