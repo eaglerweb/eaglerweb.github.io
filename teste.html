@@ -1,23 +1,31 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  <script src="https://cdn.plyr.io/3.4.6/demo.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.4.6/demo.css" />
+<link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
 
-   </head>
-   <body>
+</head>
+<body>
 
-     <video controls crossorigin playsinline
-     data-poster="https://static.wixstatic.com/media/d5df8a_d0c2aa8ea002481695a62c935111c9ba~mv2.jpg" id="player">
+<video
 
-      <source
-        <source
-              src="https://video.wixstatic.com/video/d5df8a_db8595a1fac846cb964e09554bb72bbe/1080p/mp4/file.mp4"
-              type="video/mp4"
-              size="1080"
-            />
-                   
-     </body>
-     </html>
+poster="https://static.wixstatic.com/media/d5df8a_d0c2aa8ea002481695a62c935111c9ba~mv2.jpg" class="js-player">
+
+<source
+
+     src="https://video.wixstatic.com/video/d5df8a_db8595a1fac846cb964e09554bb72bbe/1080p/mp4/file.mp4"
+    type="video/mp4"
+    size="1080" 
+    
+    />     
+        
+</video>
+
+	<script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const player = Plyr.setup('.js-player');
+    });
+    
+</script>
+
+</body>
+</html>
