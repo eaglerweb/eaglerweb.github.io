@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+    		<meta charset="utf-8" />
+            	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    		
+		<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/demo.css" />
+  		<script src="https://cdn.plyr.io/3.5.6/plyr.js" crossorigin="anonymous"></script>
+
+	</head>
+
+<body>
+	
+	<video
+
+	poster="https://static.wixstatic.com/media/d03561_544971eb3f8a471ca902229fc57954e0~mv2.jpg" class="js-player">
+
+  		<source 
+			src="https://video.wixstatic.com/video/d5df8a_7eda1c87de5c44b48812c29513d98c94/480p/mp4/file.mp4"
+   			size="480"
+   
+   		/>
+	
+   		<source 
+			src="https://video.wixstatic.com/video/d5df8a_7eda1c87de5c44b48812c29513d98c94/720p/mp4/file.mp4"
+   			size="720"
+   
+   		/>
+   
+   		<source 
+			src="https://video.wixstatic.com/video/d5df8a_7eda1c87de5c44b48812c29513d98c94/1080p/mp4/file.mp4"
+   			size="1080"
+   
+   		/>
+    
+	</video>
+
+	<script>
+
+    		document.addEventListener('DOMContentLoaded', () => {
+        
+
+        		const controls = [
+            		'play-large', 
+            		'rewind',
+            		'play', 
+            		'fast-forward',
+            		'progress', 
+            		'current-time', 
+            		'duration', 
+            		'mute', 
+            		'volume', 
+            		'settings', 
+            		'pip', 
+            		'fullscreen' 
+        		];
+
+        	const player = Plyr.setup('.js-player', { controls });
+
+    		});
+    
+	</script>
+
+</body>
+</html>
